@@ -24,3 +24,6 @@ layout = go.Layout(title='Hello First Ploty',
 
 fig = go.Figure(data=data, layout=layout)
 pyo.plot(fig, filename='scatter.html')
+
+
+ 
