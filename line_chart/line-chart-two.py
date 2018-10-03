@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.offline as pyo
 import plotly.graph_objs as go
 
-df = pd.read_csv('data/nst-est2017-alldata.csv')
+df = pd.read_csv('../data/nst-est2017-alldata.csv')
 
 df2 = df[df['DIVISION'] == '1']
 df2.set_index('NAME', inplace=True)
@@ -14,4 +14,4 @@ data = [go.Scatter(x=df2.columns,
                    mode='lines',
                    name=name) for name in df2.index]
 
-pyo.plot(data, filename='line-chart-2.html')
+pyo.plot(data, filename='line_chart-2.html')

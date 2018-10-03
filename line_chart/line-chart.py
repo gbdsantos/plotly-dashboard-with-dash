@@ -30,4 +30,4 @@ data = [trace0, trace1, trace2]
 layout = go.Layout(title='Line Charts')
 
 fig = go.Figure(data=data,layout=layout)
-pyo.plot(fig, filename='line-chart.html')
+pyo.plot(fig, filename='line_chart.html')
